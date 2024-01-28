@@ -140,7 +140,7 @@
 								<!--begin::Copyright-->
 								<div class="text-dark order-2 order-md-1">
 									<span class="text-muted fw-semibold me-1">2023&copy;</span>
-									<a href="https://keenthemes.com" target="_blank" class="text-gray-800 text-hover-primary">Lumina Project. All rights reserved.</a>
+									<a href="https://keenthemes.com" target="_blank" class="text-gray-800 text-hover-primary">Absensi V 1.0. All rights reserved.</a>
 								</div>
 								<!--end::Copyright-->
 								<!--begin::Menu-->

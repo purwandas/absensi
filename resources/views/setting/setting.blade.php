@@ -110,7 +110,7 @@
                                 <div class="col-md-12">
                                         
                                     <div id="website_footer" name="website_footer">
-                                        {!! @$website_config['website_footer'] ?? '2023 © Lumina Project' !!}
+                                        {!! @$website_config['website_footer'] ?? '2024 © Absensi V 1.0' !!}
                                     </div>
                               
                                 </div>

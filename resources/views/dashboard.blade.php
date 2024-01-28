@@ -4129,7 +4129,7 @@
 								<!--begin::Copyright-->
 								<div class="text-dark order-2 order-md-1">
 									<span class="text-muted fw-semibold me-1">2023&copy;</span>
-									<a href="javascript:void(0);" target="_blank" class="text-gray-800 text-hover-primary">Lumina Project</a>
+									<a href="javascript:void(0);" target="_blank" class="text-gray-800 text-hover-primary">Absensi V 1.0</a>
 								</div>
 								<!--end::Copyright-->
 								<!--begin::Menu-->

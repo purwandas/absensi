@@ -136,7 +136,7 @@
 								{!! $footer !!}
 							@else
 								<div class="d-flex fw-semibold text-gray-600 fs-base gap-5">
-									2023 &copy; Lumina Project
+									2024 &copy; Absensi V 1.0
 								</div>
 							@endif
 						</div>

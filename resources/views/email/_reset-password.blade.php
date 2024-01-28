@@ -114,7 +114,7 @@ License: For each use you must have a valid license purchased only from above li
 					</div>
 
 					<div class="text-center text-gray-600 fs-5">
-						2023 &copy; Lumina Project
+						2024 &copy; Absensi V 1.0
 					</div>
 
 					<!--end::Email template-->
