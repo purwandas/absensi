@@ -28,6 +28,8 @@
 
 @yield('select2-js')
 @yield('datatable-resource')
+@yield('date-input-css')
+@yield('date-input-js')
 <!--begin::Custom Javascript(used for this page only)-->
 @yield('additional-js')
 @stack('additional-js')

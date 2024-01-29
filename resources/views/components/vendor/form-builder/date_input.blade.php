@@ -13,6 +13,14 @@ $config['pluginOptions'] = array_merge([
 
 if($config['elOptions']['class']) $config['elOptions']['class'] .= ' form-control-solid';
 
+$plugins = NULL;
+if (isset($config['pluginOptions']['plugins'])) {
+	$plugins = $config['pluginOptions']['plugins'];
+	unset($config['pluginOptions']['plugins']);
+}
+
+if($config['elOptions']['class']) $config['elOptions']['class'] .= ' form-control-solid';
+
 @endphp
 
 <div class="{{ $config['divContainerClass'] }} {{ !$errors->has($name) ?: 'has-danger' }}">
@@ -55,10 +63,24 @@ if($config['elOptions']['class']) $config['elOptions']['class'] .= ' form-contro
 	@endif
 </div>
 
+
+@section('date-input-css')
+	@if($plugins)
+	<link rel="stylesheet" type="text/css" href="{{asset("css/monthSelectPlugin.css")}}">
+	@endif
+@endsection
+@section('date-input-js')
+	@if($plugins)
+	<script src="{{asset("js/monthSelectPlugin.js")}}"></script>
+	@endif
+@endsection
 @push('additional-js')
 	<script type="text/javascript">
 		var datepicker_{{ $name }} = {!! json_encode($config['pluginOptions']) !!}
 		$(document).ready(function() {
+			@if($plugins)
+			datepicker_{{ $name }}.plugins = {!! $plugins !!};
+			@endif
 			$("#{{ $config['elOptions']['id'] }}").flatpickr(datepicker_{{ $name }});
 		});
 	</script>

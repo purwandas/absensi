@@ -9,6 +9,11 @@ use DB;
 
 trait MigrationTrait {
 
+    public function hasColumn()
+    {
+        return Schema::hasColumn($this->table, array_keys($this->columns)[0]);
+    }
+
     public function generateAccessData($removeActionBy = false)
     {
         $tables = DB::select('SHOW TABLES'); // returns an array of stdObjects
@@ -75,7 +80,7 @@ trait MigrationTrait {
         Schema::create($tableName, function (Blueprint $table) use ($params){
             $table->engine = 'InnoDB';
 
-            $table->increments('id');
+            $table->id();
 
                 /*
                     [
@@ -102,7 +107,7 @@ trait MigrationTrait {
                     } elseif ($type == 'foreign') {
                         $foreignTable = @$option['foreign'] ?? Str::of(substr($column, 0, -3))->plural();
 
-                        $table->unsignedInteger($column)->nullable($nullable);
+                        $table->unsignedBigInteger($column)->nullable($nullable);
                         $table->foreign($column)->references('id')->on($foreignTable);
                     } else {
                         $table->$type($column, $length)->nullable($nullable)->default($default);
