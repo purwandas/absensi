@@ -2,6 +2,7 @@
 
 namespace App\Models\Master;
 
+use App\Models\ACL\User;
 use App\Models\BaseModel;
 
 class Device extends BaseModel
@@ -31,5 +32,10 @@ class Device extends BaseModel
                     <li class="breadcrumb-item">'.$this->name.'</li>
                     <li class="breadcrumb-item">'.$this->mac_address.'</li>
                 </ol>';
+    }
+
+    public function user()
+    {
+        return $this->belongsTo(User::class, 'user_id');
     }
 }

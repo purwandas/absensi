@@ -18,6 +18,10 @@ return new class extends Migration
     public function up(): void
     {
         $this->generateCreateTable($this->table, [
+            'user_id' => [
+                'type'     => 'foreign',
+                'nullable' => false,
+            ],
             'date' => [
                 'type'     => 'date',
                 'nullable' => false,
@@ -26,13 +30,25 @@ return new class extends Migration
                 'type'     => 'time',
                 'nullable' => false,
             ],
+            'latitude' => [
+                'type'     => 'string',
+                'nullable' => false,
+            ],
+            'longitude' => [
+                'type'     => 'string',
+                'nullable' => false,
+            ],
             'ip_address' => [
                 'type'     => 'string',
                 'nullable' => true,
             ],
-            'device_id' => [
-                'type'     => 'foreign',
-                'nullable' => false,
+            'mac_address' => [
+                'type'     => 'string',
+                'nullable' => true,
+            ],
+            'device_info' => [
+                'type'     => 'text',
+                'nullable' => true,
             ],
         ]);
     }

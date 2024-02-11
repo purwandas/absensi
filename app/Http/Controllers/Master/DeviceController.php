@@ -13,7 +13,7 @@ class DeviceController extends BaseController
     protected 
         $model           = Device::class,
         $filter          = BasicFilter::class,
-        $with_relation   = ['createdBy', 'updatedBy'],
+        $with_relation   = ['user', 'createdBy', 'updatedBy'],
         $views           = 'master.device',
         $edit_url        = 'device/detail',
         $delete_url      = 'device/delete',
