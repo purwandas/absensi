@@ -53,6 +53,9 @@ class UserController extends BaseController
     public function datatable(Request $request)
     {
         if(!@$request['not_self']) $request['not_self'] = @\Auth::user()->id;
+        if (@\Auth::user()->role_id != '1') {
+            $request['except_master_admin'] = true;
+        }
         return parent::datatable($request);
     }
 

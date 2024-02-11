@@ -27,4 +27,11 @@ class UserFilter extends QueryFilters
     {
         return $this->builder->where('users.id', '!=', $id);
     }
+
+    public function except_master_admin($val)
+    {
+        if ($val) {
+            return $this->builder->where('users.role_id', '!=', '1');
+        }
+    }
 }

@@ -2,7 +2,7 @@
 <html lang="en">
 	<!--begin::Head-->
 	<head><base href=""/>
-		<title>{{ env('APP_NAME', 'Lumina') }} - {{ env('APP_DESCRIPTION', 'Laravel Automation Project') }}</title>
+		<title>{{ env('APP_NAME', 'Absensi V 1.0') }} - {{ env('APP_DESCRIPTION', 'Laravel Automation Project') }}</title>
 		<meta charset="utf-8" />
 		<meta name="description" content="" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -12,9 +12,9 @@
 
 		<meta property="og:locale" content="en_US" />
 		<meta property="og:type" content="article" />
-		<meta property="og:title" content="{{ env('APP_NAME', 'Lumina') }} - {{ env('APP_DESCRIPTION', 'Laravel Automation Project') }}" />
+		<meta property="og:title" content="{{ env('APP_NAME', 'Absensi V 1.0') }} - {{ env('APP_DESCRIPTION', 'Laravel Automation Project') }}" />
 		<meta property="og:url" content="" />
-		<meta property="og:site_name" content="{{ env('APP_NAME', 'Lumina') }} | {{ env('APP_DESCRIPTION', 'Laravel Automation Project') }}" />
+		<meta property="og:site_name" content="{{ env('APP_NAME', 'Absensi V 1.0') }} | {{ env('APP_DESCRIPTION', 'Laravel Automation Project') }}" />
 		<link rel="canonical" href="" />
 		<link rel="shortcut icon" href="{{asset(config('theme.assets.back-office').'media/logos/favicon.ico')}}" />
 		<!--begin::Fonts(mandatory for all pages)-->
