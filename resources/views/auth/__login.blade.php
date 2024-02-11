@@ -3,7 +3,7 @@
 <html lang="en">
 	<!--begin::Head-->
 	<head>
-		<title>Lumina - Laravel Automation Project</title>
+		<title>Absensi V 1.0 - Laravel Automation Project</title>
 		<meta charset="utf-8" />
 		<meta name="description" content="" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -11,9 +11,9 @@
 		<meta name="csrf-token" content="{{ csrf_token() }}">
 		<meta property="og:locale" content="en_US" />
 		<meta property="og:type" content="article" />
-		<meta property="og:title" content="Lumina - Bootstrap Admin Template, HTML, JQuery, Laravel, Node.js, Flask Admin Dashboard Theme & Template" />
+		<meta property="og:title" content="Absensi V 1.0 - Bootstrap Admin Template, HTML, JQuery, Laravel, Node.js, Flask Admin Dashboard Theme & Template" />
 		<meta property="og:url" content="" />
-		<meta property="og:site_name" content="Lumina | Laravel Automation Project" />
+		<meta property="og:site_name" content="Absensi V 1.0 | Laravel Automation Project" />
 		<link rel="canonical" href="" />
 		<link rel="shortcut icon" href="{{asset(config('theme.assets.back-office').'media/logos/favicon.ico')}}" />
 		<!--begin::Fonts(mandatory for all pages)-->
