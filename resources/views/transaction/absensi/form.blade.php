@@ -33,6 +33,19 @@
 	    ])
 
 	        <div class="col-xl-12">
+			    {{ 
+                    Form::select2Input('type', @$data->type, [
+						"Masuk"  => "Masuk",
+						"Pulang" => "Pulang",
+                    ], [
+                        'formAlignment' => 'vertical',
+                        'pluginOptions' => ['allowClear' => false],
+                        'required'      => 'required',
+                    ]) 
+                }}
+            </div>
+
+	        <div class="col-xl-12">
 				<div id="map" style="width: 100%; height: 450px;"></div>
 				<p class="no-browser-support" style="display: none;">
 					Sorry, the Geolocation API isn't supported in Your browser.

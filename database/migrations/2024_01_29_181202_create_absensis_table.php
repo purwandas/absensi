@@ -22,6 +22,10 @@ return new class extends Migration
                 'type'     => 'foreign',
                 'nullable' => false,
             ],
+            'type' => [
+                'type'     => 'string',
+                'nullable' => false,
+            ],
             'date' => [
                 'type'     => 'date',
                 'nullable' => false,

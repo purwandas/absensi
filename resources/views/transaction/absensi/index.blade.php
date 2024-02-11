@@ -26,6 +26,7 @@
             DatatableBuilderHelper::render(route("{$route}.datatable"), [
                 'columns' => [
                     'action',
+                    'type',
                     [
                         'attribute' => 'user.name',
                         'label' => 'User Name'
